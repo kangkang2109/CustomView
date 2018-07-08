@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义属性-->
+    <declare-styleable name="RandowNumView" >
+        <attr name="num" format="string"/>
+        <attr name="color" format="color"/>
+        <attr name="numSize" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="DefaultRandowNumViewAttr" format="reference"/>
+
+</resources>

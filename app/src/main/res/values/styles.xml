@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--自定义View中默认attr 优先级别 3-->
+        <item name="DefaultRandowNumViewAttr">@style/DefaultRandowNumViewAttr</item>
+        <!--直接在Theme中定义 优先级别 5-->
+        <item name="num">Theme</item>
+    </style>
+
+    <!--直接在xml中定义style 优先级别 2-->
+    <style name="CustomRandowNumViewStyle">
+        <item name="num">defStyleStyle</item>
+        <item name="numSize">20sp</item>
+    </style>
+
+    <!--自定义View中默认attr指向的style 3-->
+    <style name="DefaultRandowNumViewAttr">
+        <item name="num">defStyleAttr</item>
+        <item name="numSize">20sp</item>
+    </style>
+
+    <!--自定义View中默认Style 4-->
+    <style name="DefaultRandowNumViewStyle">
+        <item name="num">defStyleRes</item>
+        <item name="numSize">20sp</item>
+    </style>
+
+</resources>
