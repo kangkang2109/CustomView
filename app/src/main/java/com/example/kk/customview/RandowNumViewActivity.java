@@ -14,6 +14,7 @@ public class RandowNumViewActivity extends AppCompatActivity{
 
 
     private RandowNumView mRandowNumView;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
