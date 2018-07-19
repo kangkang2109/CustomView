@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RandowNumViewActivity" />
+        <activity android:name=".CustomImageViewActivity" />
     </application>
 
 </manifest>

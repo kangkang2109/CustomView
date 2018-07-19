@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     static {
         mapping.put("Random Num", RandowNumViewActivity.class);
+        mapping.put("自定义View 2", CustomImageViewActivity.class);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

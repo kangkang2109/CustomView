@@ -52,6 +52,7 @@ public class RandowNumView extends View {
         mPaint.setTextSize(mSize);
         mPaint.setColor(mColor);
         mRect = new Rect();
+        mRect.bottom += getPaddingBottom();
         mPaint.getTextBounds(mContent, 0, mContent.length(), mRect);
         ta.recycle(); // 避免内存泄漏
     }

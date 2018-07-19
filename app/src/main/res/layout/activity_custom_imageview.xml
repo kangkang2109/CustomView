@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 1、字体的宽度大于图片，且View宽度设置为wrap_content -->
+    <com.example.kk.customview.view.CustomImageView
+        android:id="@+id/custom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="fillXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleText="title"
+        app:titleTextColor="@color/colorPrimary"
+        app:titleTextSize="16sp"
+        app:layout_constraintRight_toLeftOf="@+id/custom2"
+        />
+
+    <!-- 2、View宽度设置为精确值，字体的长度大于此宽度 -->
+    <com.example.kk.customview.view.CustomImageView
+        android:id="@+id/custom2"
+        app:layout_constraintLeft_toRightOf="@+id/custom1"
+        app:layout_constraintRight_toLeftOf="@+id/custom3"
+        android:padding = "20dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:titleText="titleTextklkkjkjk"
+        app:titleTextSize="16sp"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="fillXY"
+        app:titleTextColor="@color/colorPrimary"
+        />
+
+    <!-- 3、图片的宽度大于字体，且View宽度设置为wrap_content -->
+    <com.example.kk.customview.view.CustomImageView
+        android:id="@+id/custom3"
+        app:layout_constraintLeft_toRightOf="@id/custom2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding = "10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:titleText="t"
+        app:titleTextSize="16sp"
+        app:image="@mipmap/ic_launcher"
+        app:imageScaleType="fillXY"
+        app:titleTextColor="@color/colorPrimary"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
